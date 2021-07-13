@@ -275,8 +275,8 @@ function QuickApp:onDataReceived(data)
             }
             translatesource = sourcetable[string.sub(source, 1, #source -1)]
             if translatesource == nil then translatesource = source end
-            self:updateView("lblSource", "text", "Appareil connecté: " ..translatesource)
-            self:trace("Appareil connecté: " ..translatesource)
+            self:updateView("lblSource", "text", "Source: " ..translatesource)
+            self:trace("source: " ..translatesource)
             self:trace("FIN ========================================================")
         end
     end
